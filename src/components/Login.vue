@@ -6,14 +6,14 @@
                 <el-form-item prop="username">
                     <label>
                         <el-input v-model="param.username" type="text" placeholder="username">
-                            <el-button class="elbtn" slot="prepend" icon="el-icon-lx-people"></el-button>
+                            <el-button class="elbtn" icon="el-icon-lx-people"></el-button>
                         </el-input>
                     </label>
                 </el-form-item>
                 <el-form-item prop="password">
                     <label>
-                        <el-input type="password" placeholder="password" v-model="param.password" @keyup.enter.native="submitForm()">
-                            <el-button class="elbtn" slot="prepend" icon="el-icon-lx-lock"></el-button>
+                        <el-input type="password" placeholder="password" v-model="param.password">
+                            <el-button class="elbtn" icon="el-icon-lx-lock"></el-button>
                         </el-input>
                     </label>
                 </el-form-item>
@@ -236,7 +236,7 @@
         top: 0;
         width: 900px;
         height: 100%;
-        background-image: url(src/assets/img/bg.jpg);
+        background-image: url(../assets/img/bg.jpg);
         background-size: cover;
         transition: -webkit-transform 0.6s ease-in-out;
         transition: transform 0.6s ease-in-out;
